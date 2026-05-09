@@ -13,7 +13,7 @@ export default function App() {
     currentPage,
     paginatedTasks,
     pagination,
-    setFilter,
+    changeFilter,
     setCurrentPage,
     fetchTasks,
     toggleTask,
@@ -34,7 +34,7 @@ export default function App() {
 
         {/* Filter */}
         <div className="mb-6">
-          <TaskFilter filter={filter} onFilterChange={setFilter} />
+          <TaskFilter filter={filter} onFilterChange={changeFilter} />
         </div>
 
         {/* States */}
